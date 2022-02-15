@@ -10,7 +10,7 @@ import java.util.Objects;
 @NoArgsConstructor
 @AllArgsConstructor @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "status", schema = "manga")
+@Table(name = "status", schema = "manga", catalog = "manga")
 public class StatusEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

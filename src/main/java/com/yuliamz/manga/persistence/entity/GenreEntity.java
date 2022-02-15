@@ -9,7 +9,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "genre", schema = "manga")
+@Table(name = "genre", schema = "manga", catalog = "manga")
 public class GenreEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

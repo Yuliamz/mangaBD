@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Getter @Setter @ToString @NoArgsConstructor @AllArgsConstructor @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-@Table(name = "alternative_title", schema = "manga")
+@Table(name = "alternative_title", schema = "manga", catalog = "manga")
 public class AlternativeTitleEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

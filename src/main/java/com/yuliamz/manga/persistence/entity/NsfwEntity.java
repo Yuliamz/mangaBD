@@ -10,7 +10,7 @@ import java.util.Objects;
 @NoArgsConstructor
 @AllArgsConstructor @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "nsfw", schema = "manga")
+@Table(name = "nsfw", schema = "manga", catalog = "manga")
 public class NsfwEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

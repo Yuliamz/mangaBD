@@ -10,7 +10,7 @@ import java.util.Objects;
 @NoArgsConstructor
 @AllArgsConstructor @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "picture", schema = "manga")
+@Table(name = "picture", schema = "manga", catalog = "manga")
 public class PictureEntity {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)

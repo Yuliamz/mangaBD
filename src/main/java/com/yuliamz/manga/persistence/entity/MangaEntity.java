@@ -12,7 +12,7 @@ import java.util.Objects;
 @AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
-@Table(name = "manga", schema = "manga")
+@Table(name = "manga", schema = "manga", catalog = "manga")
 public class MangaEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

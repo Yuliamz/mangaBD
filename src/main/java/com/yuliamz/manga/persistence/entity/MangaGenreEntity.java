@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "manga_genre", schema = "manga")
+@Table(name = "manga_genre", schema = "manga", catalog = "manga")
 @IdClass(MangaGenreEntityPK.class)
 public class MangaGenreEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
