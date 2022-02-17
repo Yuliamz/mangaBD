@@ -7,6 +7,7 @@ import java.util.List;
 
 @Getter @Setter @ToString @NoArgsConstructor @AllArgsConstructor @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Table(name = "alternative_title", schema = "manga", catalog = "manga")
+@Entity
 public class AlternativeTitleEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
